@@ -45,7 +45,7 @@ public class GoogleTokenServices implements ResourceServerTokenServices, Initial
     public OAuth2Authentication loadAuthentication(String accessToken) throws AuthenticationException, InvalidTokenException {
         AccessTokenValidationResult validationResult = tokenValidator.validate(accessToken);
         if (!validationResult.isValid()) {
-            throw new UnapprovedClientAuthenticationException("The token is not intended to be used for this application.");
+            return null;
         }
         Map<String, ?> tokenInfo = validationResult.getTokenInfo();
         OAuth2Authentication authentication = getAuthentication(tokenInfo, accessToken);
