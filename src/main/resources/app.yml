@@ -2,4 +2,4 @@ oauth:
   clientId: <clientId>
   clientSecret: <clientSecret>
   checkTokenUrl: https://www.googleapis.com/oauth2/v3/tokeninfo?access_token={accessToken}
-  userInfoUrl: https://www.googleapis.com/plus/v1/people/me
+  userInfoUrl: https://www.googleapis.com/userinfo/v2/me
