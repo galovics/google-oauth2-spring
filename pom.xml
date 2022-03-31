@@ -40,7 +40,7 @@
 					<artifactId>commons-logging</artifactId>
 				</exclusion>
 			</exclusions>
-			<version>4.3.3.RELEASE</version>
+			<version>5.3.18</version>
 		</dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
